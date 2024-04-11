@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background: url(keyboard.jpg) right no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container .side_menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    left: -280px;
+}
+
+.container .side_menu .logo{
+    position: absolute;
+    top: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 60px;
+    color: palevioletred;
+}
+
+.container .side_menu .menu{
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    /* padding: 0px 30px; */
+}
+
+.container .side_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.container .side_menu .menu li a{
+       text-decoration: none;
+       color: black;
+       padding-left: 15px;
+}
+.container .side_menu .menu li:hover{
+       background-color: rgb(215, 213, 213);
+       border-left: 1px solid black;
+}
+
+.container .side_menu .socialHandle{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#check{
+    display: none;
+}
+
+.container .btn-one i{
+    font-size: 30px;
+    position: absolute;
+    left: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    line-height: 85px;
+}
+
+.side_menu .btn-two i{
+    font-size: 20px;
+    line-height: 85px;
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.btn-one i:hover{
+    font-size: 29px;
+}
+
+#check:checked ~ .side_menu{
+    left: 0px;
+}
+
+#check:checked ~ .btn-one i{
+    opacity: 0;
+}
+
+#check:checked ~ .side_menu .btn-two i{
+    opacity: 1;
+}
