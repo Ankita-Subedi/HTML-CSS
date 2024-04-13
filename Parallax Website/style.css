@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    color: #666;
+}
+
+.container{
+    height: 100vh;
+}
+
+.container .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/image1.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.container .second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/image2.png);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.container .third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/image3.png);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.first-text{
+color: black;
+font-size: 2rem;
+letter-spacing: 8px;
+}
+
+.text-bg{
+background: #313534;
+color: #fff;
+padding: 20px;
+}
+
+.first-light{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+    margin-bottom: 50px;
+}
+
+.first-light .heading{
+    align-self: center;
+}
